@@ -6,7 +6,7 @@
 * Deploying to AWS
 * Deploying to Heroku
 
-## Deploying to DPLYR
+## Deploying to DPLYR - **Recommended**
 ### You have two options when deploying to DPLYR either through the web dashboard or through the CLI tool
 ### Deploying from the CLI
 > Note: You have to install Node.js and NPM 
@@ -18,6 +18,12 @@
 * Run `dplyr auth` and enter the token you get from the [web dashboard](https://app.dplyr.dev) in the integrations panel, copy the API key and paste it in the CLI
 
 * Run `dplyr deploy` in the root folder of your project it will ask you a couple of questions answer them all and proceed
+
+#### And with this you can  deploy  your own code in under 3 commands 😃
+
+
+
+
 
 
 ## Deploying to Ubuntu 16 or above
