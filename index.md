@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Deploying Node.js apps - The complete guide
 
-You can use the [editor on GitHub](https://github.com/deploying-and-hosting-tutorials/node-js-deploying-and-hosting/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Solutins dicussed here
+* Deploying to [**DPLYR**](https://www.dplyr.dev) 
+* Deploying to Ubuntu 16.04 and above
+* Deploying to AWS
+* Deploying to Heroku
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Deploying to DPLYR - **Recommended**
+### You have two options when deploying to DPLYR either through the web dashboard or through the CLI tool
+### Deploying from the CLI
+> Note: You have to install Node.js and NPM 
 
-### Markdown
+* Run `npm i -g dplyr-cli` or with yarn `yarn global add dplyr-cli`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+> If you face a permission issue when running the command above run the command line as an Adminstrator (Windows) or use sudo (MacOS and Linux)
 
-```markdown
-Syntax highlighted code block
+* Run `dplyr auth` and enter the token you get from the [web dashboard](https://app.dplyr.dev) in the integrations panel, copy the API key and paste it in the CLI
 
-# Header 1
-## Header 2
-### Header 3
+* Run `dplyr deploy` in the root folder of your project it will ask you a couple of questions answer them all and proceed
 
-- Bulleted
-- List
+#### And with this you can  deploy  your own code in under 3 commands 😃
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/deploying-and-hosting-tutorials/node-js-deploying-and-hosting/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Deploying to Ubuntu 16 or above
+* Run `sudo apt update`
+* Run `sudo apt install git nodejs npm` 
+* Clone your git project using `git clone GIT_PROJECT_URL`
+* Inside your project folder run `npm install`
+* While inside run `pm2 npm start npm`
